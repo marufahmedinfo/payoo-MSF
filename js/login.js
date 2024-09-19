@@ -5,7 +5,7 @@ document.getElementById('login-btn').addEventListener('click', function(event){
     // console.log(phoneNumber, pinNumber);
     if(phoneNumber === "01320316967" && pinNumber === "1234"){
         console.log('right you');
-        window.location.href = "/home.html"
+        window.location.href = "home.html";
     }else{
         alert("Wrong Phone Number & Pin Number")
     }
