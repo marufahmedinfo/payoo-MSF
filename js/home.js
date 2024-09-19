@@ -37,3 +37,20 @@ document.getElementById('add-maney').addEventListener('click', function(event){
 });
 
 
+
+// cash out section
+
+
+document.getElementById('cash-out').addEventListener('click', function(event){
+    event.preventDefault();
+    // console.log('click')
+    const cashOutManey = document.getElementById('input-cash-out-maney').value;
+    const cashOutNumber = parseFloat(cashOutManey);
+    const pinNumber = document.getElementById('input-pin-cash-out').value;
+    if(pinNumber === "1234"){
+        const balanceNumber = document.getElementById('avilable-balance').innerText;
+        const numberBa = parseFloat(balanceNumber);
+        const finalOut = numberBa -  cashOutNumber;
+        document.getElementById('avilable-balance').innerText = finalOut;
+    }
+})
