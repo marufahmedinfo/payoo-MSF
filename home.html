@@ -27,13 +27,13 @@
                     <div class="divider"></div>
                     <!-- user acktion button -->
                      <div>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Maney</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
+                        <button id="add-maney-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Maney</button>
+                        <button id="cash-out-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
                      </div>
                      <div class="divider"></div>
 
                      <!-- add maney form -->
-                     <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                     <div id="addManey" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -54,7 +54,7 @@
                       </div>
                      <!-- add maney end -->
                       <!-- csah out start -->
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <div id="cashOut" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">

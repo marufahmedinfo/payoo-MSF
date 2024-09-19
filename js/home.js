@@ -33,7 +33,7 @@ document.getElementById('add-maney').addEventListener('click', function(event){
     }else{
         alert('Faild to add maney ! Place try again');
     }
-    
+
 });
 
 
@@ -53,4 +53,17 @@ document.getElementById('cash-out').addEventListener('click', function(event){
         const finalOut = numberBa -  cashOutNumber;
         document.getElementById('avilable-balance').innerText = finalOut;
     }
+});
+
+
+
+// click btn add maney
+document.getElementById('add-maney-btn').addEventListener('click', function(){
+    document.getElementById('addManey').classList.remove('hidden')
+    document.getElementById('cashOut').classList.add('hidden')
+})
+// click btn cash out
+document.getElementById('cash-out-btn').addEventListener('click', function(){
+    document.getElementById('cashOut').classList.remove('hidden')
+    document.getElementById('addManey').classList.add('hidden')
 })
