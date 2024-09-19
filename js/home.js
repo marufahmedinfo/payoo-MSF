@@ -52,6 +52,8 @@ document.getElementById('cash-out').addEventListener('click', function(event){
         const numberBa = parseFloat(balanceNumber);
         const finalOut = numberBa -  cashOutNumber;
         document.getElementById('avilable-balance').innerText = finalOut;
+    }else{
+        alert('Faild to add maney ! Place try again');
     }
 });
 
